@@ -1,0 +1,33 @@
+
+#!/bin/bash
+
+  select DRINK in tea cofee water juice appe all none
+   do
+   case $DRINK in
+  tea|cofee|water|all)
+    echo "go to canteen"
+  ;;
+  juice|apee)
+    echo "available at home"
+  ;;
+  none)
+    break
+   ;;
+   *) echo "ERROR: invalid selection"
+  ;;
+  esac
+  done
+
+
+EXPECTED OUTPUT:
+
+  1) tea
+  2) cofee
+  3) water
+  4) juice
+  5) appe
+  6) all
+  7) none
+  #? none
+  ERROR: invalid selection
+#? 
