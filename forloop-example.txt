@@ -1,16 +1,17 @@
-$ cat for.sh
-#!/bin/bash
-# timestable-print out a mutiplication table
-for i in 1 2 3 
-do
-for j in 1 2 3
-do
-value='expr $i\* $j'
-echo -n "$value"
-done
-echo
-done
-$ ./for.sh
-expr $i\* $jexpr $i\* $jexpr $i\* $j
-expr $i\* $jexpr $i\* $jexpr $i\* $j
-expr $i\* $jexpr $i\* $jexpr $i\* $j
+
+  #!/bin/bash
+  # timestable-print out a mutiplication table
+  for i in 1 2 3 
+  do
+  for j in 1 2 3
+  do
+  value='expr $i\* $j'
+  echo -n "$value"
+  done
+  echo
+  done
+
+  OUTPUT:
+   expr $i\* $jexpr $i\* $jexpr $i\* $j
+   expr $i\* $jexpr $i\* $jexpr $i\* $j
+   expr $i\* $jexpr $i\* $jexpr $i\* $j

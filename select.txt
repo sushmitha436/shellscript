@@ -18,8 +18,7 @@
   esac
   done
 
-
-EXPECTED OUTPUT:
+ OUTPUT:
 
   1) tea
   2) cofee

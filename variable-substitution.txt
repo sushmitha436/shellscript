@@ -1,0 +1,29 @@
+  #!/bin/bash
+
+  echo ${var:-"variable is not set"}
+  echo "1 - value of variable is ${var}"
+
+  echo ${var:-"variable is not set"}
+  echo "2 - value of variable is ${var}"
+    unset var
+  echo ${var:+"this is default value"}
+  echo "3 - value of var is $var"
+
+    var="prefix"
+  echo ${var:+"this is default value"}
+  echo "4 - value of var is $var"
+
+  echo ${var:?"print this message"}
+  echo "5 - value of var is ${var}"
+
+      OUTPUT:
+  variable is not set
+  1 - value of variable is 
+  variable is not set
+  2 - value of variable is 
+
+  3 - value of var is 
+  this is default value
+  4 - value of var is prefix
+  prefix
+  5 - value of var is prefix

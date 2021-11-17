@@ -5,7 +5,7 @@ echo $var
 done
 
 
-sample output:
+OUTPUT:
   0
   1
   2

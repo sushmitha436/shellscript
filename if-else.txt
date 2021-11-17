@@ -10,6 +10,6 @@ else
    echo "a is not equal to b"
 fi
 
-sample output:
+OUTPUT:
 
 a is not equal to b
